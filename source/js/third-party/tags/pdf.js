@@ -15,7 +15,8 @@ document.addEventListener('page:loaded', () => {
             view     : 'FitH'
           },
           PDFJS_URL: CONFIG.pdf.url,
-          height   : element.dataset.height
+          height   : element.dataset.height,
+          forcePDFJS : true
         });
       });
     });
