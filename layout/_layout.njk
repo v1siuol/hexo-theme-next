@@ -5,7 +5,6 @@
   {%- include '_partials/head/head-unique.njk' -%}
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.njk', {}, {cache: theme.cache.enable}) }}
-  <script src="/lib/live2d-widget/autoload.js"></script>
   {{- next_inject('head') }}
   <noscript>
     <link rel="stylesheet" href="{{ url_for(theme.css) }}/noscript.css">
